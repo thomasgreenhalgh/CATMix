@@ -1,0 +1,2644 @@
+set cut_paste_input [stack 0]
+version 12.2 v9
+push $cut_paste_input
+Group {
+ name CATMIX
+ tile_color 0xe06800ff
+ label "\n\n-"
+ note_font "Bitstream Vera Sans Bold Italic"
+ selected true
+ xpos -9660
+ ypos -12800
+ addUserKnob {20 Cats}
+ addUserKnob {52 StoreVals +INVISIBLE T "\{('CatA', 'C'): False, ('Diffuse', 'S'): False, ('CatE', 'M'): False, ('CatJ', 'M'): False, ('CatA', 'D'): False, ('Diffuse', 'M'): False, ('CatB', 'C'): False, ('Coat', 'S'): False, ('Albedo', 'D'): False, ('CatC', 'C'): False, ('CatH', 'C'): False, ('CatD', 'D'): False, ('CatD', 'M'): False, ('CatD', 'C'): False, ('Specular', 'M'): False, ('EmissionInd', 'S'): False, ('CatC', 'D'): False, ('Coat', 'M'): False, ('CatC', 'M'): False, ('CatA', 'M'): False, ('CatH', 'M'): False, ('CatI', 'C'): False, ('Specular', 'S'): False, ('CatA', 'S'): False, ('Albedo', 'M'): False, ('Emission', 'S'): False, ('CatF', 'M'): False, ('Sheen', 'S'): False, ('CatE', 'C'): False, ('CatI', 'M'): False, ('CatJ', 'C'): False, ('CatB', 'S'): False, ('CatG', 'M'): False, ('Specular', 'D'): False, ('Coat', 'C'): False, ('CatF', 'C'): False, ('Albedo', 'C'): False, ('CatB', 'M'): False, ('Coat', 'D'): False, ('CatB', 'D'): False, ('CatG', 'C'): False\}" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {52 CATPanel l "" +STARTLINE T CATPanel(nuke.thisNode()) +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {20 "" n -2}
+ addUserKnob {20 CatA}
+ addUserKnob {41 saturation T Sat_CatA.saturation}
+ addUserKnob {41 white l gain T Grad_CatA.white}
+ addUserKnob {41 multiply T Grad_CatA.multiply}
+ addUserKnob {41 add l offset T Grad_CatA.add}
+ addUserKnob {41 gamma T Grad_CatA.gamma}
+ addUserKnob {20 CatB}
+ addUserKnob {41 saturation_1 l saturation T Sat_CatB.saturation}
+ addUserKnob {41 white_1 l gain T Grad_CatB.white}
+ addUserKnob {41 multiply_1 l multiply T Grad_CatB.multiply}
+ addUserKnob {41 add_1 l offset T Grad_CatB.add}
+ addUserKnob {41 gamma_1 l gamma T Grad_CatB.gamma}
+ addUserKnob {20 CatC}
+ addUserKnob {41 saturation_2 l saturation T Sat_CatC.saturation}
+ addUserKnob {41 white_2 l gain T Grad_CatC.white}
+ addUserKnob {41 multiply_2 l multiply T Grad_CatC.multiply}
+ addUserKnob {41 add_2 l offset T Grad_CatC.add}
+ addUserKnob {41 gamma_2 l gamma T Grad_CatC.gamma}
+ addUserKnob {20 CatD}
+ addUserKnob {41 saturation_3 l saturation T Sat_CatD.saturation}
+ addUserKnob {41 white_3 l gain T Grad_CatD.white}
+ addUserKnob {41 multiply_3 l multiply T Grad_CatD.multiply}
+ addUserKnob {41 add_3 l offset T Grad_CatD.add}
+ addUserKnob {41 gamma_3 l gamma T Grad_CatD.gamma}
+ addUserKnob {20 CatE}
+ addUserKnob {41 saturation_4 l saturation T Sat_CatE.saturation}
+ addUserKnob {41 white_4 l gain T Grad_CatE.white}
+ addUserKnob {41 multiply_4 l multiply T Grad_CatE.multiply}
+ addUserKnob {41 add_4 l offset T Grad_CatE.add}
+ addUserKnob {41 gamma_4 l gamma T Grad_CatE.gamma}
+ addUserKnob {20 CatF}
+ addUserKnob {41 saturation_5 l saturation T Sat_CatF.saturation}
+ addUserKnob {41 white_5 l gain T Grad_CatF.white}
+ addUserKnob {41 multiply_5 l multiply T Grad_CatF.multiply}
+ addUserKnob {41 add_5 l offset T Grad_CatF.add}
+ addUserKnob {41 gamma_5 l gamma T Grad_CatF.gamma}
+ addUserKnob {20 CatG}
+ addUserKnob {41 saturation_6 l saturation T Sat_CatG.saturation}
+ addUserKnob {41 white_6 l gain T Grad_CatG.white}
+ addUserKnob {41 multiply_6 l multiply T Grad_CatG.multiply}
+ addUserKnob {41 add_6 l offset T Grad_CatG.add}
+ addUserKnob {41 gamma_6 l gamma T Grad_CatG.gamma}
+ addUserKnob {20 CatH}
+ addUserKnob {41 saturation_7 l saturation T Sat_CatH.saturation}
+ addUserKnob {41 white_7 l gain T Grad_CatH.white}
+ addUserKnob {41 multiply_7 l multiply T Grad_CatH.multiply}
+ addUserKnob {41 add_7 l offset T Grad_CatH.add}
+ addUserKnob {41 gamma_7 l gamma T Grad_CatH.gamma}
+ addUserKnob {20 CatI}
+ addUserKnob {41 saturation_8 l saturation T Sat_CatI.saturation}
+ addUserKnob {41 white_8 l gain T Grad_CatI.white}
+ addUserKnob {41 multiply_8 l multiply T Grad_CatI.multiply}
+ addUserKnob {41 add_8 l offset T Grad_CatI.add}
+ addUserKnob {41 gamma_8 l gamma T Grad_CatI.gamma}
+ addUserKnob {20 CatJ}
+ addUserKnob {41 saturation_9 l saturation T Sat_CatJ.saturation}
+ addUserKnob {41 white_9 l gain T Grad_CatJ.white}
+ addUserKnob {41 multiply_9 l multiply T Grad_CatJ.multiply}
+ addUserKnob {41 add_9 l offset T Grad_CatJ.add}
+ addUserKnob {41 gamma_9 l gamma T Grad_CatJ.gamma}
+ addUserKnob {20 "" n -3}
+ addUserKnob {20 endGroup_19 n -1}
+ addUserKnob {20 Aovs}
+ addUserKnob {26 ""}
+ addUserKnob {52 AOVPanel l "" +STARTLINE T AOVPanel(nuke.thisNode()) +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {20 "" n -2}
+ addUserKnob {20 Albedo}
+ addUserKnob {41 saturation_10 l saturation T Sat_Albedo.saturation}
+ addUserKnob {41 white_10 l gain T Grad_Albedo.white}
+ addUserKnob {41 multiply_10 l multiply T Grad_Albedo.multiply}
+ addUserKnob {41 add_10 l offset T Grad_Albedo.add}
+ addUserKnob {41 gamma_10 l gamma T Grad_Albedo.gamma}
+ addUserKnob {20 Coat}
+ addUserKnob {41 saturation_11 l saturation T Sat_Coat.saturation}
+ addUserKnob {41 white_11 l gain T Grad_Coat.white}
+ addUserKnob {41 multiply_11 l multiply T Grad_Coat.multiply}
+ addUserKnob {41 add_11 l offset T Grad_Coat.add}
+ addUserKnob {41 gamma_11 l gamma T Grad_Coat.gamma}
+ addUserKnob {20 Diffuse}
+ addUserKnob {41 saturation_12 l saturation T Sat_Diffuse.saturation}
+ addUserKnob {41 white_12 l gain T Grad_Diffuse.white}
+ addUserKnob {41 multiply_12 l multiply T Grad_Diffuse.multiply}
+ addUserKnob {41 add_12 l offset T Grad_Diffuse.add}
+ addUserKnob {41 gamma_12 l gamma T Grad_Diffuse.gamma}
+ addUserKnob {20 Emission}
+ addUserKnob {41 saturation_13 l saturation T Sat_Emission.saturation}
+ addUserKnob {41 white_13 l gain T Grad_Emission.white}
+ addUserKnob {41 multiply_13 l multiply T Grad_Emission.multiply}
+ addUserKnob {41 add_13 l offset T Grad_Emission.add}
+ addUserKnob {41 gamma_13 l gamma T Grad_Emission.gamma}
+ addUserKnob {20 EmissionInd}
+ addUserKnob {41 saturation_14 l saturation T Sat_EmissionInd.saturation}
+ addUserKnob {41 white_14 l gain T Grad_EmissionInd.white}
+ addUserKnob {41 multiply_14 l multiply T Grad_EmissionInd.multiply}
+ addUserKnob {41 add_14 l offset T Grad_EmissionInd.add}
+ addUserKnob {41 gamma_14 l gamma T Grad_EmissionInd.gamma}
+ addUserKnob {20 Sheen}
+ addUserKnob {41 saturation_15 l saturation T Sat_Sheen.saturation}
+ addUserKnob {41 white_15 l gain T Grad_Sheen.white}
+ addUserKnob {41 multiply_15 l multiply T Grad_Sheen.multiply}
+ addUserKnob {41 add_15 l offset T Grad_Sheen.add}
+ addUserKnob {41 gamma_15 l gamma T Grad_Sheen.gamma}
+ addUserKnob {20 Specular}
+ addUserKnob {41 saturation_16 l saturation T Sat_Specular.saturation}
+ addUserKnob {41 white_16 l gain T Grad_Specular.white}
+ addUserKnob {41 multiply_16 l multiply T Grad_Specular.multiply}
+ addUserKnob {41 add_16 l offset T Grad_Specular.add}
+ addUserKnob {41 gamma_16 l gamma T Grad_Specular.gamma}
+ addUserKnob {20 SSS}
+ addUserKnob {41 saturation_17 l saturation T Sat_SSS.saturation}
+ addUserKnob {41 white_17 l gain T Grad_SSS.white}
+ addUserKnob {41 multiply_17 l multiply T Grad_SSS.multiply}
+ addUserKnob {41 add_17 l offset T Grad_SSS.add}
+ addUserKnob {41 gamma_17 l gamma T Grad_SSS.gamma}
+ addUserKnob {20 Transmission}
+ addUserKnob {41 saturation_18 l saturation T Sat_Transmission.saturation}
+ addUserKnob {41 white_18 l gain T Grad_Transmission.white}
+ addUserKnob {41 multiply_18 l multiply T Grad_Transmission.multiply}
+ addUserKnob {41 add_18 l offset T Grad_Transmission.add}
+ addUserKnob {41 gamma_18 l gamma T Grad_Transmission.gamma}
+ addUserKnob {20 Leftovers}
+ addUserKnob {41 saturation_19 l saturation T Sat_Leftovers.saturation}
+ addUserKnob {41 white_19 l gain T Grad_Leftovers.white}
+ addUserKnob {41 multiply_19 l multiply T Grad_Leftovers.multiply}
+ addUserKnob {41 add_19 l offset T Grad_Leftovers.add}
+ addUserKnob {41 gamma_19 l gamma T Grad_Leftovers.gamma}
+ addUserKnob {20 "" n -3}
+ addUserKnob {20 HelpTab l Help}
+ addUserKnob {22 HelpButton l ? T "nuke.message('''\n<b> How does the CATMIX node work? </b>\n\nThis tool enables you to seamlessly grade between AOVs and Category lights\n\n<b> S </b> > Solo the particular light or Aov, these can be added up if you solo multiple. Please note not to solo both the AOVs and the Cats. It will default to the rgb.\n\n<b> M </b> > Mute the particular light or Aov\n\n<b> D </b> > Disable any grades that have changed from their default setting on the node itself. This will change to green if there have been any changes to the grades. It will update when the node is refreshed from the properties window\n\n<b> C </b> > Disables or enables any grades that you have added into the group. FYI, make sure to keep any node you add between the two dots within the group as these are the start and end point. These buttons will turn blue if a node has been placed between the particular Cats or Aovs and will update when the node is closed and opened again.\n\n''')" +STARTLINE}
+ addUserKnob {26 ""}
+ addUserKnob {26 ToolInfo l "" +STARTLINE T "<i> v001 > 2023 06 30 </i>"}
+ addUserKnob {26 textinfo l "" +STARTLINE T "<i> Any questions or ideas - thomas.greenhalgh@framestore.com </i>"}
+}
+ BackdropNode {
+  inputs 0
+  name BackdropNode1
+  tile_color 0x2c5885ff
+  label ALBEDO
+  note_font_size 42
+  xpos 1057
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode10
+  tile_color 0x2c5885ff
+  label LEFTOVERS
+  note_font_size 42
+  xpos 4567
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode11
+  tile_color 0x2c5885ff
+  label CATA
+  note_font_size 42
+  xpos 1057
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode12
+  tile_color 0x2c5885ff
+  label CATJ
+  note_font_size 42
+  xpos 4567
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode13
+  tile_color 0x2c5885ff
+  label CATB
+  note_font_size 42
+  xpos 1447
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode14
+  tile_color 0x2c5885ff
+  label CATC
+  note_font_size 42
+  xpos 1837
+  ypos 1985
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode15
+  tile_color 0x2c5885ff
+  label CATD
+  note_font_size 42
+  xpos 2227
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode16
+  tile_color 0x2c5885ff
+  label CATE
+  note_font_size 42
+  xpos 2617
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode17
+  tile_color 0x2c5885ff
+  label CATF
+  note_font_size 42
+  xpos 3007
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode18
+  tile_color 0x2c5885ff
+  label CATG
+  note_font_size 42
+  xpos 3397
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode19
+  tile_color 0x2c5885ff
+  label CATH
+  note_font_size 42
+  xpos 3787
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode2
+  tile_color 0x2c5885ff
+  label COAT
+  note_font_size 42
+  xpos 1447
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode20
+  tile_color 0x2c5885ff
+  label CATI
+  note_font_size 42
+  xpos 4177
+  ypos 1982
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode3
+  tile_color 0x2c5885ff
+  label DIFFUSE
+  note_font_size 42
+  xpos 1837
+  ypos -456
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode4
+  tile_color 0x2c5885ff
+  label EMISSION
+  note_font_size 42
+  xpos 2227
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode5
+  tile_color 0x2c5885ff
+  label "EMISSION IND"
+  note_font_size 42
+  xpos 2617
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode6
+  tile_color 0x2c5885ff
+  label SHEEN
+  note_font_size 42
+  xpos 3007
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode7
+  tile_color 0x2c5885ff
+  label SPECULAR
+  note_font_size 42
+  xpos 3397
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode8
+  tile_color 0x2c5885ff
+  label SSS
+  note_font_size 42
+  xpos 3787
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ BackdropNode {
+  inputs 0
+  name BackdropNode9
+  tile_color 0x2c5885ff
+  label TRANSMISSION
+  note_font_size 42
+  xpos 4177
+  ypos -454
+  appearance Border
+  border_width 4
+  bdwidth 227
+  bdheight 1072
+ }
+ Input {
+  inputs 0
+  name InputCG
+  xpos 740
+  ypos -1576
+ }
+ Dot {
+  name Dot109
+  xpos 774
+  ypos -1302
+ }
+set Nfa071600 [stack 0]
+ Dot {
+  name Dot142
+  xpos 514
+  ypos -1302
+ }
+ Shuffle2 {
+  fromInput1 {{0} B}
+  fromInput2 {{0} B}
+  mappings "4 rgba.red 0 0 rgba.red 0 0 rgba.green 0 1 rgba.green 0 1 rgba.blue 0 2 rgba.blue 0 2 white -1 -1 rgba.alpha 0 3"
+  name Shuffle128
+  xpos 480
+  ypos 4520
+  disable {{"\[string first \".alpha\" \[channels \[input this 0]]]>-1"}}
+ }
+push $Nfa071600
+ Unpremult {
+  channels all
+  name Unpremult23
+  xpos 740
+  ypos -1150
+ }
+ Dot {
+  name Dot110
+  xpos 774
+  ypos -978
+ }
+set Nfa053900 [stack 0]
+ Dot {
+  name Dot111
+  xpos 1164
+  ypos -978
+ }
+set Nfa053200 [stack 0]
+add_layer {transmission transmission.red transmission.green transmission.blue}
+add_layer {volume volume.red volume.green volume.blue}
+ Remove {
+  operation keep
+  channels transmission
+  channels2 volume
+  name Remove5
+  xpos 1000
+  ypos -826
+ }
+push $Nfa053200
+add_layer {emission_indirect emission_indirect.red emission_indirect.green emission_indirect.blue}
+add_layer {sheen sheen.red sheen.green sheen.blue}
+add_layer {specular specular.red specular.green specular.blue}
+add_layer {sss sss.red sss.green sss.blue}
+ Remove {
+  operation keep
+  channels emission_indirect
+  channels2 sheen
+  channels3 specular
+  channels4 sss
+  name Remove4
+  xpos 1000
+  ypos -880
+ }
+push $Nfa053200
+add_layer {albedo albedo.red albedo.green albedo.blue}
+add_layer {coat coat.red coat.green coat.blue}
+add_layer {diffuse diffuse.red diffuse.green diffuse.blue}
+add_layer {emission emission.red emission.green emission.blue emission.alpha}
+ Remove {
+  operation keep
+  channels albedo
+  channels2 coat
+  channels3 diffuse
+  channels4 emission
+  name Remove1
+  xpos 1130
+  ypos -934
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name Merge1
+  xpos 1130
+  ypos -874
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name Merge2
+  xpos 1130
+  ypos -820
+ }
+ Shuffle {
+  in albedo
+  name Shuffle116
+  xpos 1130
+  ypos -772
+ }
+set Nfa050800 [stack 0]
+ Shuffle {
+  in coat
+  name Shuffle117
+  xpos 1520
+  ypos -772
+ }
+set Nfa050100 [stack 0]
+ Shuffle {
+  in diffuse
+  name Shuffle118
+  xpos 1910
+  ypos -772
+ }
+set Nfa023900 [stack 0]
+ Shuffle {
+  in emission
+  name Shuffle119
+  xpos 2300
+  ypos -772
+ }
+set Nfa023200 [stack 0]
+ Shuffle {
+  in emission_indirect
+  name Shuffle120
+  xpos 2690
+  ypos -772
+ }
+set Nfa022b00 [stack 0]
+ Shuffle {
+  in sheen
+  name Shuffle121
+  xpos 3080
+  ypos -772
+ }
+set Nfa022400 [stack 0]
+ Shuffle {
+  in specular
+  name Shuffle122
+  xpos 3470
+  ypos -772
+ }
+set Nfa021d00 [stack 0]
+ Shuffle {
+  in sss
+  name Shuffle123
+  xpos 3860
+  ypos -772
+ }
+set Nfa021600 [stack 0]
+ Shuffle {
+  in transmission
+  name Shuffle124
+  xpos 4250
+  ypos -772
+ }
+set Nfa020f00 [stack 0]
+ Expression {
+  temp_name0 leftoverR
+  temp_expr0 r-(coat.red+diffuse.red+emission.red+emission_indirect.red+sheen.red+specular.red+sss.red+transmission.red)
+  temp_name1 leftoverG
+  temp_expr1 g-(coat.green+diffuse.green+emission.green+emission_indirect.green+sheen.green+specular.green+sss.green+transmission.green)
+  temp_name2 leftoverB
+  temp_expr2 b-(coat.blue+diffuse.blue+emission.blue+emission_indirect.blue+sheen.blue+specular.blue+sss.blue+transmission.blue)
+  expr0 "leftoverR < 0 ? 0 : leftoverR"
+  expr1 "leftoverG < 0 ? 0 : leftoverG"
+  expr2 "leftoverB < 0 ? 0 : leftoverB"
+  name Leftovers_Expression
+  xpos 4640
+  ypos -766
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove99
+  xpos 4640
+  ypos -712
+ }
+ Saturation {
+  name Sat_Leftovers
+  xpos 4640
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_Leftovers
+  xpos 4640
+  ypos -604
+ }
+ Dot {
+  name startDot_Leftovers
+  xpos 4674
+  ypos -546
+ }
+ Dot {
+  name endDot_Leftovers
+  xpos 4674
+  ypos 1182
+ }
+ Multiply {
+  value 0
+  name Mute_Leftovers
+  xpos 870
+  ypos 1172
+  disable true
+ }
+push $Nfa020f00
+ Remove {
+  operation keep
+  channels rgb
+  name Remove103
+  xpos 4250
+  ypos -712
+ }
+ Saturation {
+  name Sat_Transmission
+  xpos 4250
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_Transmission
+  xpos 4250
+  ypos -604
+ }
+ Dot {
+  name startDot_Transmission
+  xpos 4284
+  ypos -546
+ }
+ Dot {
+  name endDot_Transmission
+  xpos 4284
+  ypos 1128
+ }
+ Multiply {
+  value 0
+  name Mute_Transmission
+  xpos 870
+  ypos 1118
+  disable true
+ }
+push $Nfa021600
+ Remove {
+  operation keep
+  channels rgb
+  name Remove102
+  xpos 3860
+  ypos -712
+ }
+ Saturation {
+  name Sat_SSS
+  xpos 3860
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_SSS
+  xpos 3860
+  ypos -604
+ }
+ Dot {
+  name startDot_SSS
+  xpos 3894
+  ypos -546
+ }
+ Dot {
+  name endDot_SSS
+  xpos 3894
+  ypos 1074
+ }
+ Multiply {
+  value 0
+  name Mute_SSS
+  xpos 870
+  ypos 1064
+  disable true
+ }
+push $Nfa021d00
+ Remove {
+  operation keep
+  channels rgb
+  name Remove101
+  xpos 3470
+  ypos -712
+ }
+ Saturation {
+  name Sat_Specular
+  xpos 3470
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_Specular
+  xpos 3470
+  ypos -604
+ }
+ Dot {
+  name startDot_Specular
+  xpos 3504
+  ypos -546
+ }
+ Dot {
+  name endDot_Specular
+  xpos 3504
+  ypos 1020
+ }
+ Multiply {
+  value 0
+  name Mute_Specular
+  xpos 870
+  ypos 1010
+  disable true
+ }
+push $Nfa022400
+ Remove {
+  operation keep
+  channels rgb
+  name Remove100
+  xpos 3080
+  ypos -712
+ }
+ Saturation {
+  name Sat_Sheen
+  xpos 3080
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_Sheen
+  xpos 3080
+  ypos -604
+ }
+ Dot {
+  name startDot_Sheen
+  xpos 3114
+  ypos -546
+ }
+ Dot {
+  name endDot_Sheen
+  xpos 3114
+  ypos 966
+ }
+ Multiply {
+  value 0
+  name Mute_Sheen
+  xpos 870
+  ypos 956
+  disable true
+ }
+push $Nfa022b00
+ Remove {
+  operation keep
+  channels rgb
+  name Remove98
+  xpos 2690
+  ypos -712
+ }
+ Saturation {
+  name Sat_EmissionInd
+  xpos 2690
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_EmissionInd
+  xpos 2690
+  ypos -604
+ }
+ Dot {
+  name startDot_EmissionInd
+  xpos 2724
+  ypos -546
+ }
+ Dot {
+  name endDot_EmissionInd
+  xpos 2724
+  ypos 912
+ }
+ Multiply {
+  value 0
+  name Mute_EmissionInd
+  xpos 870
+  ypos 902
+  disable true
+ }
+push $Nfa023200
+ Remove {
+  operation keep
+  channels rgb
+  name Remove97
+  xpos 2300
+  ypos -712
+ }
+ Saturation {
+  name Sat_Emission
+  xpos 2300
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_Emission
+  xpos 2300
+  ypos -604
+ }
+ Dot {
+  name startDot_Emission
+  xpos 2334
+  ypos -546
+ }
+ Dot {
+  name endDot_Emission
+  xpos 2334
+  ypos 858
+ }
+ Multiply {
+  value 0
+  name Mute_Emission
+  xpos 870
+  ypos 848
+  disable true
+ }
+push $Nfa023900
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo.red
+  temp_name1 G
+  temp_expr1 g/albedo.green
+  temp_name2 B
+  temp_expr2 b/albedo.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression2
+  label "RGB / ALBEDO"
+  xpos 1910
+  ypos -718
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove96
+  xpos 1910
+  ypos -658
+ }
+ Saturation {
+  name Sat_Diffuse
+  xpos 1910
+  ypos -604
+ }
+ Grade {
+  black_clamp false
+  name Grad_Diffuse
+  xpos 1910
+  ypos -550
+ }
+ Dot {
+  name startDot_Diffuse
+  xpos 1944
+  ypos -492
+ }
+ Dot {
+  name endDot_Diffuse
+  xpos 1944
+  ypos 804
+ }
+ Multiply {
+  value 0
+  name Mute_Diffuse
+  xpos 870
+  ypos 794
+  disable true
+ }
+push $Nfa050100
+ Remove {
+  operation keep
+  channels rgb
+  name Remove25
+  xpos 1520
+  ypos -712
+ }
+ Saturation {
+  name Sat_Coat
+  xpos 1520
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_Coat
+  xpos 1520
+  ypos -604
+ }
+ Dot {
+  name startDot_Coat
+  xpos 1554
+  ypos -546
+ }
+ Dot {
+  name endDot_Coat
+  xpos 1554
+  ypos 750
+ }
+ Multiply {
+  value 0
+  name Mute_Coat
+  xpos 870
+  ypos 740
+  disable true
+ }
+push $Nfa050800
+ Remove {
+  operation keep
+  channels rgb
+  name Remove24
+  xpos 1130
+  ypos -712
+ }
+ Saturation {
+  name Sat_Albedo
+  xpos 1130
+  ypos -658
+ }
+ Grade {
+  black_clamp false
+  name Grad_Albedo
+  xpos 1130
+  ypos -604
+ }
+ Dot {
+  name startDot_Albedo
+  xpos 1164
+  ypos -546
+ }
+ Dot {
+  name endDot_Albedo
+  xpos 1164
+  ypos 696
+ }
+ Multiply {
+  value 0
+  name Mute_Albedo
+  xpos 870
+  ypos 686
+  disable true
+ }
+push $Nfa053900
+add_layer {albedo_graded albedo_graded.red albedo_graded.green albedo_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 albedo_graded.red
+  from1 rgba.green
+  to1 albedo_graded.green
+  from2 rgba.blue
+  to2 albedo_graded.blue
+  name Copy33
+  xpos 740
+  ypos 674
+ }
+add_layer {coat_graded coat_graded.red coat_graded.green coat_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 coat_graded.red
+  from1 rgba.green
+  to1 coat_graded.green
+  from2 rgba.blue
+  to2 coat_graded.blue
+  name Copy34
+  xpos 740
+  ypos 728
+ }
+add_layer {diffuse_graded diffuse_graded.red diffuse_graded.green diffuse_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 diffuse_graded.red
+  from1 rgba.green
+  to1 diffuse_graded.green
+  from2 rgba.blue
+  to2 diffuse_graded.blue
+  name Copy35
+  xpos 740
+  ypos 782
+ }
+add_layer {emission_graded emission_graded.red emission_graded.green emission_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 emission_graded.red
+  from1 rgba.green
+  to1 emission_graded.green
+  from2 rgba.blue
+  to2 emission_graded.blue
+  name Copy36
+  xpos 740
+  ypos 836
+ }
+add_layer {emission_indirect_graded emission_indirect_graded.red emission_indirect_graded.green emission_indirect_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 emission_indirect_graded.red
+  from1 rgba.green
+  to1 emission_indirect_graded.green
+  from2 rgba.blue
+  to2 emission_indirect_graded.blue
+  name Copy37
+  xpos 740
+  ypos 890
+ }
+add_layer {sheen_graded sheen_graded.red sheen_graded.green sheen_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 sheen_graded.red
+  from1 rgba.green
+  to1 sheen_graded.green
+  from2 rgba.blue
+  to2 sheen_graded.blue
+  name Copy38
+  xpos 740
+  ypos 944
+ }
+add_layer {specular_graded specular_graded.red specular_graded.green specular_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 specular_graded.red
+  from1 rgba.green
+  to1 specular_graded.green
+  from2 rgba.blue
+  to2 specular_graded.blue
+  name Copy39
+  xpos 740
+  ypos 998
+ }
+add_layer {sss_graded sss_graded.red sss_graded.green sss_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 sss_graded.red
+  from1 rgba.green
+  to1 sss_graded.green
+  from2 rgba.blue
+  to2 sss_graded.blue
+  name Copy40
+  xpos 740
+  ypos 1052
+ }
+add_layer {transmission_graded transmission_graded.red transmission_graded.green transmission_graded.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 transmission_graded.red
+  from1 rgba.green
+  to1 transmission_graded.green
+  from2 rgba.blue
+  to2 transmission_graded.blue
+  name Copy41
+  xpos 740
+  ypos 1106
+ }
+add_layer {leftovers leftovers.red leftovers.green leftovers.blue}
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 leftovers.red
+  from1 rgba.green
+  to1 leftovers.green
+  from2 rgba.blue
+  to2 leftovers.blue
+  name Copy1
+  xpos 740
+  ypos 1160
+ }
+ Dot {
+  name Dot107
+  xpos 774
+  ypos 1398
+ }
+set Nf9e3f900 [stack 0]
+ Dot {
+  name Dot108
+  xpos 1164
+  ypos 1398
+ }
+set Nf9e3f200 [stack 0]
+add_layer {CatI_RGBA CatI_RGBA.red CatI_RGBA.green CatI_RGBA.blue}
+add_layer {CatJ_RGBA CatJ_RGBA.red CatJ_RGBA.green CatJ_RGBA.blue}
+ Remove {
+  operation keep
+  channels CatI_RGBA
+  channels2 CatJ_RGBA
+  channels3 albedo
+  channels4 albedo_graded
+  name Remove8
+  xpos 1000
+  ypos 1550
+ }
+push $Nf9e3f200
+add_layer {CatE_RGBA CatE_RGBA.red CatE_RGBA.green CatE_RGBA.blue}
+add_layer {CatF_RGBA CatF_RGBA.red CatF_RGBA.green CatF_RGBA.blue}
+add_layer {CatG_RGBA CatG_RGBA.red CatG_RGBA.green CatG_RGBA.blue}
+add_layer {CatH_RGBA CatH_RGBA.red CatH_RGBA.green CatH_RGBA.blue}
+ Remove {
+  operation keep
+  channels CatE_RGBA
+  channels2 CatF_RGBA
+  channels3 CatG_RGBA
+  channels4 CatH_RGBA
+  name Remove6
+  xpos 1000
+  ypos 1496
+ }
+push $Nf9e3f200
+add_layer {CatA_RGBA CatA_RGBA.red CatA_RGBA.green CatA_RGBA.blue}
+add_layer {CatB_RGBA CatB_RGBA.red CatB_RGBA.green CatB_RGBA.blue}
+add_layer {CatC_RGBA CatC_RGBA.red CatC_RGBA.green CatC_RGBA.blue}
+add_layer {CatD_RGBA CatD_RGBA.red CatD_RGBA.green CatD_RGBA.blue}
+ Remove {
+  operation keep
+  channels CatA_RGBA
+  channels2 CatB_RGBA
+  channels3 CatC_RGBA
+  channels4 CatD_RGBA
+  name Remove7
+  xpos 1130
+  ypos 1442
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name Merge3
+  xpos 1130
+  ypos 1502
+ }
+ Merge2 {
+  inputs 2
+  also_merge all
+  name Merge4
+  xpos 1130
+  ypos 1556
+ }
+ Shuffle {
+  in CatA_RGBA
+  name Shuffle12
+  xpos 1130
+  ypos 1604
+ }
+set Nf9e3c800 [stack 0]
+ Shuffle {
+  in CatB_RGBA
+  name Shuffle13
+  xpos 1520
+  ypos 1604
+ }
+set Nf9e3c100 [stack 0]
+ Shuffle {
+  in CatC_RGBA
+  name Shuffle15
+  xpos 1910
+  ypos 1604
+ }
+set Nf9e0f900 [stack 0]
+ Shuffle {
+  in CatD_RGBA
+  name Shuffle16
+  xpos 2300
+  ypos 1604
+ }
+set Nf9e0f200 [stack 0]
+ Shuffle {
+  in CatE_RGBA
+  name Shuffle17
+  xpos 2690
+  ypos 1604
+ }
+set Nf9e0eb00 [stack 0]
+ Shuffle {
+  in CatF_RGBA
+  name Shuffle18
+  xpos 3080
+  ypos 1604
+ }
+set Nf9e0e400 [stack 0]
+ Shuffle {
+  in CatG_RGBA
+  name Shuffle19
+  xpos 3470
+  ypos 1604
+ }
+set Nf9e0dd00 [stack 0]
+ Shuffle {
+  in CatH_RGBA
+  name Shuffle23
+  xpos 3860
+  ypos 1604
+ }
+set Nf9e0d600 [stack 0]
+ Shuffle {
+  in CatI_RGBA
+  name Shuffle24
+  xpos 4250
+  ypos 1604
+ }
+set Nf9e0cf00 [stack 0]
+ Shuffle {
+  in CatJ_RGBA
+  name Shuffle25
+  xpos 4640
+  ypos 1604
+ }
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression15
+  label "RGB / ALBEDO"
+  xpos 4640
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove23
+  xpos 4640
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatJ
+  xpos 4640
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatJ
+  xpos 4640
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatJ
+  xpos 4674
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatJ
+  xpos 4674
+  ypos 3720
+ }
+ Multiply {
+  value 0
+  name Mute_CatJ
+  xpos 870
+  ypos 3710
+  disable true
+ }
+push $Nf9e0cf00
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression14
+  label "RGB / ALBEDO"
+  xpos 4250
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove2
+  xpos 4250
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatI
+  xpos 4250
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatI
+  xpos 4250
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatI
+  xpos 4284
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatI
+  xpos 4284
+  ypos 3666
+ }
+ Multiply {
+  value 0
+  name Mute_CatI
+  xpos 870
+  ypos 3656
+  disable true
+ }
+push $Nf9e0d600
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression13
+  label "RGB / ALBEDO"
+  xpos 3860
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove3
+  xpos 3860
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatH
+  xpos 3860
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatH
+  xpos 3860
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatH
+  xpos 3894
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatH
+  xpos 3894
+  ypos 3612
+ }
+ Multiply {
+  value 0
+  name Mute_CatH
+  xpos 870
+  ypos 3602
+  disable true
+ }
+push $Nf9e0dd00
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression12
+  label "RGB / ALBEDO"
+  xpos 3470
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove9
+  xpos 3470
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatG
+  xpos 3470
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatG
+  xpos 3470
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatG
+  xpos 3504
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatG
+  xpos 3504
+  ypos 3558
+ }
+ Multiply {
+  value 0
+  name Mute_CatG
+  xpos 870
+  ypos 3548
+  disable true
+ }
+push $Nf9e0e400
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression11
+  label "RGB / ALBEDO"
+  xpos 3080
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove16
+  xpos 3080
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatF
+  xpos 3080
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatF
+  xpos 3080
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatF
+  xpos 3114
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatF
+  xpos 3114
+  ypos 3504
+ }
+ Multiply {
+  value 0
+  name Mute_CatF
+  xpos 870
+  ypos 3494
+  disable true
+ }
+push $Nf9e0eb00
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression10
+  label "RGB / ALBEDO"
+  xpos 2690
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove18
+  xpos 2690
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatE
+  xpos 2690
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatE
+  xpos 2690
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatE
+  xpos 2724
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatE
+  xpos 2724
+  ypos 3450
+ }
+ Multiply {
+  value 0
+  name Mute_CatE
+  xpos 870
+  ypos 3440
+  disable true
+ }
+push $Nf9e0f200
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression9
+  label "RGB / ALBEDO"
+  xpos 2300
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove19
+  xpos 2300
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatD
+  xpos 2300
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatD
+  xpos 2300
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatD
+  xpos 2334
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatD
+  xpos 2334
+  ypos 3396
+ }
+ Multiply {
+  value 0
+  name Mute_CatD
+  xpos 870
+  ypos 3386
+  disable true
+ }
+push $Nf9e0f900
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression8
+  label "RGB / ALBEDO"
+  xpos 1910
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove20
+  xpos 1910
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatC
+  xpos 1910
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatC
+  xpos 1910
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatC
+  xpos 1944
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatC
+  xpos 1944
+  ypos 3342
+ }
+ Multiply {
+  value 0
+  name Mute_CatC
+  xpos 870
+  ypos 3332
+  disable true
+ }
+push $Nf9e3c100
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression5
+  label "RGB / ALBEDO"
+  xpos 1520
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove21
+  xpos 1520
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatB
+  xpos 1520
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatB
+  xpos 1520
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatB
+  xpos 1554
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatB
+  xpos 1554
+  ypos 3288
+ }
+ Multiply {
+  value 0
+  name Mute_CatB
+  xpos 870
+  ypos 3278
+  disable true
+ }
+push $Nf9e3c800
+ Expression {
+  temp_name0 R
+  temp_expr0 r/albedo_graded.red
+  temp_name1 G
+  temp_expr1 g/albedo_graded.green
+  temp_name2 B
+  temp_expr2 b/albedo_graded.blue
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression7
+  label "RGB / ALBEDO"
+  xpos 1130
+  ypos 1658
+  disable true
+ }
+ Remove {
+  operation keep
+  channels rgb
+  name Remove22
+  xpos 1130
+  ypos 1718
+ }
+ Saturation {
+  name Sat_CatA
+  xpos 1130
+  ypos 1772
+ }
+ Grade {
+  black_clamp false
+  name Grad_CatA
+  xpos 1130
+  ypos 1826
+ }
+ Dot {
+  name startDot_CatA
+  xpos 1164
+  ypos 1884
+ }
+ Dot {
+  name endDot_CatA
+  xpos 1164
+  ypos 3234
+ }
+ Multiply {
+  value 0
+  name Mute_CatA
+  xpos 870
+  ypos 3224
+  disable true
+ }
+push $Nf9e3f900
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatA_RGBA.red
+  from1 rgba.green
+  to1 CatA_RGBA.green
+  from2 rgba.blue
+  to2 CatA_RGBA.blue
+  name Copy53
+  xpos 740
+  ypos 3212
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatB_RGBA.red
+  from1 rgba.green
+  to1 CatB_RGBA.green
+  from2 rgba.blue
+  to2 CatB_RGBA.blue
+  name Copy54
+  xpos 740
+  ypos 3266
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatC_RGBA.red
+  from1 rgba.green
+  to1 CatC_RGBA.green
+  from2 rgba.blue
+  to2 CatC_RGBA.blue
+  name Copy55
+  xpos 740
+  ypos 3320
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatD_RGBA.red
+  from1 rgba.green
+  to1 CatD_RGBA.green
+  from2 rgba.blue
+  to2 CatD_RGBA.blue
+  name Copy56
+  xpos 740
+  ypos 3374
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatE_RGBA.red
+  from1 rgba.green
+  to1 CatE_RGBA.green
+  from2 rgba.blue
+  to2 CatE_RGBA.blue
+  name Copy57
+  xpos 740
+  ypos 3428
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatF_RGBA.red
+  from1 rgba.green
+  to1 CatF_RGBA.green
+  from2 rgba.blue
+  to2 CatF_RGBA.blue
+  name Copy58
+  xpos 740
+  ypos 3482
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatG_RGBA.red
+  from1 rgba.green
+  to1 CatG_RGBA.green
+  from2 rgba.blue
+  to2 CatG_RGBA.blue
+  name Copy59
+  xpos 740
+  ypos 3536
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatH_RGBA.red
+  from1 rgba.green
+  to1 CatH_RGBA.green
+  from2 rgba.blue
+  to2 CatH_RGBA.blue
+  name Copy60
+  xpos 740
+  ypos 3590
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatI_RGBA.red
+  from1 rgba.green
+  to1 CatI_RGBA.green
+  from2 rgba.blue
+  to2 CatI_RGBA.blue
+  name Copy61
+  xpos 740
+  ypos 3644
+ }
+ Copy {
+  inputs 2
+  from0 rgba.red
+  to0 CatJ_RGBA.red
+  from1 rgba.green
+  to1 CatJ_RGBA.green
+  from2 rgba.blue
+  to2 CatJ_RGBA.blue
+  name Copy62
+  xpos 740
+  ypos 3698
+ }
+ Group {
+  name Group1
+  label "MULTILIGHTS * ALBEDO"
+  xpos 740
+  ypos 4250
+  disable true
+ }
+  Input {
+   inputs 0
+   name Input1
+   xpos 827
+   ypos 176
+  }
+  Expression {
+   channel0 {CatA_RGBA.red -CatA_RGBA.green -CatA_RGBA.blue}
+   expr0 CatA_RGBA.red*albedo_graded.red
+   channel1 {-CatA_RGBA.red CatA_RGBA.green -CatA_RGBA.blue}
+   expr1 CatA_RGBA.green*albedo_graded.green
+   channel2 {-CatA_RGBA.red -CatA_RGBA.green CatA_RGBA.blue}
+   expr2 CatA_RGBA.blue*albedo_graded.blue
+   name Expression18
+   label CatA_RGBA*albedo
+   selected true
+   xpos 827
+   ypos 216
+  }
+  Expression {
+   channel0 {CatB_RGBA.red -CatB_RGBA.green -CatB_RGBA.blue}
+   expr0 CatB_RGBA.red*albedo_graded.red
+   channel1 {-CatB_RGBA.red CatB_RGBA.green -CatB_RGBA.blue}
+   expr1 CatB_RGBA.green*albedo_graded.green
+   channel2 {-CatB_RGBA.red -CatB_RGBA.green CatB_RGBA.blue}
+   expr2 CatB_RGBA.blue*albedo_graded.blue
+   name Expression19
+   label CatB_RGBA*albedo
+   xpos 827
+   ypos 254
+  }
+  Expression {
+   channel0 {CatC_RGBA.red -CatC_RGBA.green -CatC_RGBA.blue}
+   expr0 CatC_RGBA.red*albedo_graded.red
+   channel1 {-CatC_RGBA.red CatC_RGBA.green -CatC_RGBA.blue}
+   expr1 CatC_RGBA.green*albedo_graded.green
+   channel2 {-CatC_RGBA.red -CatC_RGBA.green CatC_RGBA.blue}
+   expr2 CatC_RGBA.blue*albedo_graded.blue
+   name Expression20
+   label CatC_RGBA*albedo
+   xpos 827
+   ypos 292
+  }
+  Expression {
+   channel0 {CatD_RGBA.red -CatD_RGBA.green -CatD_RGBA.blue}
+   expr0 CatD_RGBA.red*albedo_graded.red
+   channel1 {-CatD_RGBA.red CatD_RGBA.green -CatD_RGBA.blue}
+   expr1 CatD_RGBA.green*albedo_graded.green
+   channel2 {-CatD_RGBA.red -CatD_RGBA.green CatD_RGBA.blue}
+   expr2 CatD_RGBA.blue*albedo_graded.blue
+   name Expression21
+   label CatD_RGBA*albedo
+   xpos 827
+   ypos 330
+  }
+  Expression {
+   channel0 {CatE_RGBA.red -CatE_RGBA.green -CatE_RGBA.blue}
+   expr0 CatE_RGBA.red*albedo_graded.red
+   channel1 {-CatE_RGBA.red CatE_RGBA.green -CatE_RGBA.blue}
+   expr1 CatE_RGBA.green*albedo_graded.green
+   channel2 {-CatE_RGBA.red -CatE_RGBA.green CatE_RGBA.blue}
+   expr2 CatE_RGBA.blue*albedo_graded.blue
+   name Expression22
+   label CatE_RGBA*albedo
+   xpos 827
+   ypos 368
+  }
+  Expression {
+   channel0 {CatF_RGBA.red -CatF_RGBA.green -CatF_RGBA.blue}
+   expr0 CatF_RGBA.red*albedo_graded.red
+   channel1 {-CatF_RGBA.red CatF_RGBA.green -CatF_RGBA.blue}
+   expr1 CatF_RGBA.green*albedo_graded.green
+   channel2 {-CatF_RGBA.red -CatF_RGBA.green CatF_RGBA.blue}
+   expr2 CatF_RGBA.blue*albedo_graded.blue
+   name Expression23
+   label CatF_RGBA*albedo
+   xpos 827
+   ypos 406
+  }
+  Expression {
+   channel0 {CatG_RGBA.red -CatG_RGBA.green -CatG_RGBA.blue}
+   expr0 CatG_RGBA.red*albedo_graded.red
+   channel1 {-CatG_RGBA.red CatG_RGBA.green -CatG_RGBA.blue}
+   expr1 CatG_RGBA.green*albedo_graded.green
+   channel2 {-CatG_RGBA.red -CatG_RGBA.green CatG_RGBA.blue}
+   expr2 CatG_RGBA.blue*albedo_graded.blue
+   name Expression24
+   label CatG_RGBA*albedo
+   xpos 827
+   ypos 444
+  }
+  Expression {
+   channel0 {CatH_RGBA.red -CatH_RGBA.green -CatH_RGBA.blue}
+   expr0 CatH_RGBA.red*albedo_graded.red
+   channel1 {-CatH_RGBA.red CatH_RGBA.green -CatH_RGBA.blue}
+   expr1 CatH_RGBA.green*albedo_graded.green
+   channel2 {-CatH_RGBA.red -CatH_RGBA.green CatH_RGBA.blue}
+   expr2 CatH_RGBA.blue*albedo_graded.blue
+   name Expression25
+   label CatH_RGBA*albedo
+   xpos 827
+   ypos 482
+  }
+  Expression {
+   channel0 {CatI_RGBA.red -CatI_RGBA.green -CatI_RGBA.blue}
+   expr0 CatI_RGBA.red*albedo_graded.red
+   channel1 {-CatI_RGBA.red CatI_RGBA.green -CatI_RGBA.blue}
+   expr1 CatI_RGBA.green*albedo_graded.green
+   channel2 {-CatI_RGBA.red -CatI_RGBA.green CatI_RGBA.blue}
+   expr2 CatI_RGBA.blue*albedo_graded.blue
+   name Expression26
+   label CatI_RGBA*albedo
+   xpos 827
+   ypos 520
+  }
+  Expression {
+   channel0 {CatJ_RGBA.red -CatJ_RGBA.green -CatJ_RGBA.blue}
+   expr0 CatJ_RGBA.red*albedo_graded.red
+   channel1 {-CatJ_RGBA.red CatJ_RGBA.green -CatJ_RGBA.blue}
+   expr1 CatJ_RGBA.green*albedo_graded.green
+   channel2 {-CatJ_RGBA.red -CatJ_RGBA.green CatJ_RGBA.blue}
+   expr2 CatJ_RGBA.blue*albedo_graded.blue
+   name Expression27
+   label CatJ_RGBA*albedo
+   xpos 827
+   ypos 558
+  }
+  Output {
+   name Output1
+   xpos 827
+   ypos 658
+  }
+ end_group
+ Expression {
+  channel0 {diffuse_graded.red -diffuse_graded.green -diffuse_graded.blue}
+  expr0 (albedo_graded.red*diffuse_graded.red)
+  channel1 {-diffuse_graded.red diffuse_graded.green -diffuse_graded.blue}
+  expr1 (albedo_graded.green*diffuse_graded.green)
+  channel2 {-diffuse_graded.red -diffuse_graded.green diffuse_graded.blue}
+  expr2 (albedo_graded.blue*diffuse_graded.blue)
+  name Expression17
+  label "(DIFFUSE * ALBEDO)"
+  xpos 740
+  ypos 4304
+ }
+ Expression {
+  temp_name0 R
+  temp_expr0 ((CatA_RGBA.red+CatB_RGBA.red+CatC_RGBA.red+CatD_RGBA.red+CatE_RGBA.red+CatF_RGBA.red+CatG_RGBA.red+CatH_RGBA.red+CatI_RGBA.red+CatJ_RGBA.red)-(coat.red+diffuse.red+emission.red+emission_indirect.red+sheen.red+specular.red+sss.red+transmission.red))+(coat_graded.red+diffuse_graded.red+emission_graded.red+emission_indirect_graded.red+sheen_graded.red+specular_graded.red+sss_graded.red+transmission_graded.red)
+  temp_name1 G
+  temp_expr1 ((CatA_RGBA.green+CatB_RGBA.green+CatC_RGBA.green+CatD_RGBA.green+CatE_RGBA.green+CatF_RGBA.green+CatG_RGBA.green+CatH_RGBA.green+CatI_RGBA.green+CatJ_RGBA.green)-(coat.green+diffuse.green+emission.green+emission_indirect.green+sheen.green+specular.green+sss.green+transmission.green))+(coat_graded.green+diffuse_graded.green+emission_graded.green+emission_indirect_graded.green+sheen_graded.green+specular_graded.green+sss_graded.green+transmission_graded.green)
+  temp_name2 B
+  temp_expr2 ((CatA_RGBA.blue+CatB_RGBA.blue+CatC_RGBA.blue+CatD_RGBA.blue+CatE_RGBA.blue+CatF_RGBA.blue+CatG_RGBA.blue+CatH_RGBA.blue+CatI_RGBA.blue+CatJ_RGBA.blue)-(coat.blue+diffuse.blue+emission.blue+emission_indirect.blue+sheen.blue+specular.blue+sss.blue+transmission.blue))+(coat_graded.blue+diffuse_graded.blue+emission_graded.blue+emission_indirect_graded.blue+sheen_graded.blue+specular_graded.blue+sss_graded.blue+transmission_graded.blue)
+  expr0 "isnan(R) || isinf(R) ? 0 : R"
+  expr1 "isnan(G) || isinf(G) ? 0 : G"
+  expr2 "isnan(B) || isinf(B) ? 0 : B"
+  name Expression6
+  label "CAT - ORIGINALAOVs + GRADEDAOVs"
+  xpos 740
+  ypos 4358
+ }
+ Expression {
+  expr0 r+emission_graded.red+leftovers.red
+  expr1 g+emission_graded.green+leftovers.green
+  expr2 b+emission_graded.blue+leftovers.blue
+  name Expression28
+  label "RGB = EMISSION + LIGHTS + LEFTOVERS"
+  xpos 740
+  ypos 4412
+ }
+ Group {
+  name Group2
+  label "COPY + REMOVE GRADED"
+  xpos 740
+  ypos 4466
+ }
+  Input {
+   inputs 0
+   name Input1
+   xpos 827
+   ypos 176
+  }
+  Expression {
+   channel0 {albedo.red -albedo.green -albedo.blue}
+   expr0 albedo_graded.red
+   channel1 {-albedo.red albedo.green -albedo.blue}
+   expr1 albedo_graded.green
+   channel2 {-albedo.red -albedo.green albedo.blue}
+   expr2 albedo_graded.blue
+   name Expression29
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 216
+  }
+  Expression {
+   channel0 {coat.red -coat.green -coat.blue}
+   expr0 coat_graded.red
+   channel1 {-coat.red coat.green -coat.blue}
+   expr1 coat_graded.green
+   channel2 {-coat.red -coat.green coat.blue}
+   expr2 coat_graded.blue
+   name Expression30
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 254
+  }
+  Expression {
+   channel0 {diffuse.red -diffuse.green -diffuse.blue}
+   expr0 diffuse_graded.red
+   channel1 {-diffuse.red diffuse.green -diffuse.blue}
+   expr1 diffuse_graded.green
+   channel2 {-diffuse.red -diffuse.green diffuse.blue}
+   expr2 diffuse_graded.blue
+   name Expression31
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 292
+  }
+  Expression {
+   channel0 {emission.red -emission.green -emission.blue -emission.alpha}
+   expr0 emission_graded.red
+   channel1 {-emission.red emission.green -emission.blue -emission.alpha}
+   expr1 emission_graded.green
+   channel2 {-emission.red -emission.green emission.blue -emission.alpha}
+   expr2 emission_graded.blue
+   name Expression32
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 330
+  }
+  Expression {
+   channel0 emission_indirect
+   expr0 emission_indirect_graded.red
+   channel1 emission_indirect
+   expr1 emission_indirect_graded.green
+   channel2 emission_indirect
+   expr2 emission_indirect_graded.blue
+   name Expression33
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 368
+  }
+  Expression {
+   channel0 {sheen.red -sheen.green -sheen.blue}
+   expr0 sheen_graded.red
+   channel1 {-sheen.red sheen.green -sheen.blue}
+   expr1 sheen_graded.green
+   channel2 {-sheen.red -sheen.green sheen.blue}
+   expr2 sheen_graded.blue
+   name Expression34
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 406
+  }
+  Expression {
+   channel0 {specular.red -specular.green -specular.blue}
+   expr0 specular_graded.red
+   channel1 {-specular.red specular.green -specular.blue}
+   expr1 specular_graded.green
+   channel2 {-specular.red -specular.green specular.blue}
+   expr2 specular_graded.blue
+   name Expression35
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 444
+  }
+  Expression {
+   channel0 {sss.red -sss.green -sss.blue}
+   expr0 sss_graded.red
+   channel1 {-sss.red sss.green -sss.blue}
+   expr1 sss_graded.green
+   channel2 {-sss.red -sss.green sss.blue}
+   expr2 sss_graded.blue
+   name Expression36
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 482
+  }
+  Expression {
+   channel0 {transmission.red -transmission.green -transmission.blue}
+   expr0 transmission_graded.red
+   channel1 {-transmission.red transmission.green -transmission.blue}
+   expr1 transmission_graded.green
+   channel2 {-transmission.red -transmission.green transmission.blue}
+   expr2 transmission_graded.blue
+   name Expression37
+   label "Copy graded > Original Aovs"
+   xpos 827
+   ypos 520
+  }
+  Remove {
+   channels albedo_graded
+   channels2 coat_graded
+   channels3 diffuse_graded
+   channels4 emission_graded
+   name Remove107
+   xpos 828
+   ypos 594
+  }
+  Remove {
+   channels emission_indirect_graded
+   channels2 sheen_graded
+   channels3 specular_graded
+   channels4 sss_graded
+   name Remove108
+   xpos 828
+   ypos 632
+  }
+  Remove {
+   channels transmission_graded
+   channels2 leftovers
+   name Remove109
+   xpos 828
+   ypos 670
+  }
+  Output {
+   name Output1
+   xpos 827
+   ypos 734
+  }
+ end_group
+ Copy {
+  inputs 2
+  from0 rgba.alpha
+  to0 rgba.alpha
+  name Copy72
+  xpos 740
+  ypos 4520
+ }
+ Premult {
+  channels all
+  name Premult1
+  xpos 740
+  ypos 4574
+ }
+ Group {
+  name SOLOPASSES
+  label "SOLO AOVs"
+  xpos 740
+  ypos 4628
+ }
+  Input {
+   inputs 0
+   name Input1
+   xpos 1000
+   ypos 98
+  }
+  Dot {
+   name Dot1
+   xpos 1034
+   ypos 156
+  }
+set Nfa304f00 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatA_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatA_RGBA.red 0 0 rgba.red 0 0 CatA_RGBA.green 0 1 rgba.green 0 1 CatA_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle129
+   xpos 1130
+   ypos 200
+  }
+set Nfa304800 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatB_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatB_RGBA.red 0 0 rgba.red 0 0 CatB_RGBA.green 0 1 rgba.green 0 1 CatB_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle130
+   xpos 1130
+   ypos 308
+  }
+set Nfa304100 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatC_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatC_RGBA.red 0 0 rgba.red 0 0 CatC_RGBA.green 0 1 rgba.green 0 1 CatC_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle131
+   xpos 1130
+   ypos 416
+  }
+set Nfa2d7900 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatD_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatD_RGBA.red 0 0 rgba.red 0 0 CatD_RGBA.green 0 1 rgba.green 0 1 CatD_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle132
+   xpos 1130
+   ypos 524
+  }
+set Nfa2d7200 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatE_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatE_RGBA.red 0 0 rgba.red 0 0 CatE_RGBA.green 0 1 rgba.green 0 1 CatE_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle133
+   xpos 1130
+   ypos 632
+  }
+set Nfa2d6b00 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatF_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatF_RGBA.red 0 0 rgba.red 0 0 CatF_RGBA.green 0 1 rgba.green 0 1 CatF_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle134
+   xpos 1130
+   ypos 740
+  }
+set Nfa2d6400 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatG_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatG_RGBA.red 0 0 rgba.red 0 0 CatG_RGBA.green 0 1 rgba.green 0 1 CatG_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle135
+   xpos 1130
+   ypos 848
+  }
+set Nfa2d5d00 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatH_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatH_RGBA.red 0 0 rgba.red 0 0 CatH_RGBA.green 0 1 rgba.green 0 1 CatH_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle136
+   xpos 1130
+   ypos 956
+  }
+set Nfa2d5600 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatI_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatI_RGBA.red 0 0 rgba.red 0 0 CatI_RGBA.green 0 1 rgba.green 0 1 CatI_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle137
+   xpos 1130
+   ypos 1064
+  }
+set Nfa2d4f00 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 CatJ_RGBA
+   fromInput2 {{0} B}
+   mappings "4 CatJ_RGBA.red 0 0 rgba.red 0 0 CatJ_RGBA.green 0 1 rgba.green 0 1 CatJ_RGBA.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle138
+   xpos 1130
+   ypos 1172
+  }
+set Nfa2d4800 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 albedo
+   fromInput2 {{0} B}
+   mappings "4 albedo.red 0 0 rgba.red 0 0 albedo.green 0 1 rgba.green 0 1 albedo.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle139
+   xpos 1130
+   ypos 1280
+  }
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 coat
+   fromInput2 {{0} B}
+   mappings "4 coat.red 0 0 rgba.red 0 0 coat.green 0 1 rgba.green 0 1 coat.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle140
+   xpos 1130
+   ypos 1388
+  }
+set Nfa2a3900 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 diffuse
+   fromInput2 {{0} B}
+   mappings "4 diffuse.red 0 0 rgba.red 0 0 diffuse.green 0 1 rgba.green 0 1 diffuse.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle141
+   xpos 1130
+   ypos 1496
+  }
+set Nfa2a3200 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 emission
+   fromInput2 {{0} B}
+   mappings "4 emission.red 0 0 rgba.red 0 0 emission.green 0 1 rgba.green 0 1 emission.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle142
+   xpos 1130
+   ypos 1604
+  }
+set Nfa2a2b00 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 emission_indirect
+   fromInput2 {{0} B}
+   mappings "4 emission_indirect.red 0 0 rgba.red 0 0 emission_indirect.green 0 1 rgba.green 0 1 emission_indirect.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle143
+   xpos 1130
+   ypos 1712
+  }
+set Nfa2a2400 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 sheen
+   fromInput2 {{0} B}
+   mappings "4 sheen.red 0 0 rgba.red 0 0 sheen.green 0 1 rgba.green 0 1 sheen.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle144
+   xpos 1130
+   ypos 1820
+  }
+set Nfa2a1d00 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 specular
+   fromInput2 {{0} B}
+   mappings "4 specular.red 0 0 rgba.red 0 0 specular.green 0 1 rgba.green 0 1 specular.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle145
+   xpos 1130
+   ypos 1928
+  }
+set Nfa2a1600 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 sss
+   fromInput2 {{0} B}
+   mappings "4 sss.red 0 0 rgba.red 0 0 sss.green 0 1 rgba.green 0 1 sss.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle146
+   xpos 1130
+   ypos 2036
+  }
+set Nfa2a0f00 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 transmission
+   fromInput2 {{0} B}
+   mappings "4 transmission.red 0 0 rgba.red 0 0 transmission.green 0 1 rgba.green 0 1 transmission.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle147
+   xpos 1130
+   ypos 2144
+  }
+set Nfa2a0800 [stack 0]
+  Shuffle2 {
+   fromInput1 {{0} B}
+   in1 leftovers
+   fromInput2 {{0} B}
+   mappings "4 leftovers.red 0 0 rgba.red 0 0 leftovers.green 0 1 rgba.green 0 1 leftovers.blue 0 2 rgba.blue 0 2 black -1 -1 rgba.alpha 0 3"
+   name Shuffle1
+   xpos 1130
+   ypos 2252
+  }
+push $Nfa2a0800
+push $Nfa2a0f00
+push $Nfa2a1600
+push $Nfa2a1d00
+push $Nfa2a2400
+push $Nfa2a2b00
+push $Nfa2a3200
+push $Nfa2a3900
+push $Nfa304f00
+  Remove {
+   name Remove1
+   xpos 745
+   ypos 146
+  }
+set Nfa27f900 [stack 0]
+  Dot {
+   name Dot20
+   xpos 644
+   ypos 156
+  }
+  Merge2 {
+   operation plus
+   name Merge_Albedo
+   xpos 610
+   ypos 1286
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_Coat
+   xpos 610
+   ypos 1394
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_Diffuse
+   xpos 610
+   ypos 1502
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_Emission
+   xpos 610
+   ypos 1610
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_EmissionInd
+   xpos 610
+   ypos 1718
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_Sheen
+   xpos 610
+   ypos 1826
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_Specular
+   xpos 610
+   ypos 1934
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_SSS
+   xpos 610
+   ypos 2042
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_Transmission
+   xpos 610
+   ypos 2150
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_Leftovers
+   xpos 610
+   ypos 2258
+   disable true
+  }
+push $Nfa2d4800
+push $Nfa2d4f00
+push $Nfa2d5600
+push $Nfa2d5d00
+push $Nfa2d6400
+push $Nfa2d6b00
+push $Nfa2d7200
+push $Nfa2d7900
+push $Nfa304100
+push $Nfa304800
+push $Nfa27f900
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatA
+   xpos 742
+   ypos 206
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatB
+   xpos 740
+   ypos 314
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatC
+   xpos 740
+   ypos 422
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatD
+   xpos 740
+   ypos 530
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatE
+   xpos 740
+   ypos 638
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatF
+   xpos 740
+   ypos 746
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatG
+   xpos 740
+   ypos 854
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatH
+   xpos 740
+   ypos 962
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatI
+   xpos 740
+   ypos 1070
+   disable true
+  }
+  Merge2 {
+   inputs 2
+   operation plus
+   name Merge_CatJ
+   xpos 740
+   ypos 1178
+   disable true
+  }
+push $Nfa304f00
+  Switch {
+   inputs 3
+   name LightSwitch
+   xpos 807
+   ypos 2434
+  }
+  Output {
+   name Output1
+   xpos 807
+   ypos 2488
+  }
+push $Nfa2a1600
+  Viewer {
+   frame_range 1-100
+   viewerProcess "Show Look Graded (FS)"
+   name Viewer1
+   xpos 610
+   ypos 2528
+  }
+ end_group
+ Output {
+  name Output1
+  xpos 740
+  ypos 4742
+ }
+end_group
