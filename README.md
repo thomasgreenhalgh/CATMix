@@ -1,4 +1,4 @@
-# CATmix
+# CATMIX
 
 
 ![Alt Text](https://github.com/thomasgreenhalgh/Uploads/blob/main/Screenshot%202024-08-02%20at%2016.36.51.png)
